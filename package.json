@@ -24,7 +24,10 @@
         "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false",
         "SETUP_RECAPTCHA_VERIFICATION": "true"
       },
-      "cordova-custom-config": {}
+      "cordova-custom-config": {},
+      "cordova.plugins.diagnostic": {
+        "ANDROID_SUPPORT_VERSION": "28.+"
+      }
     },
     "platforms": [
       "android",
@@ -33,7 +36,8 @@
   },
   "devDependencies": {
     "google-auth-library": "^4.2.5",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.19",
+    "cordova.plugins.diagnostic": "~5.0.0"
   },
   "scripts": {
     "send": "node ./scripts/sendMessage.js",
